@@ -1,0 +1,407 @@
+{
+  "description": "Per-scene tuned params (best PSNR across tuning rounds vs FastGS-Big)",
+  "out_name": "best_tuned",
+  "base_extra": [
+    "--eval",
+    "--disable_tensorboard",
+    "--fast_train",
+    "--sr",
+    "--sr_refine_stride",
+    "5",
+    "--sr_stride5_after",
+    "5000",
+    "--iterations",
+    "30000"
+  ],
+  "scenes": {
+    "mipnerf360/bicycle": {
+      "source": "datasets/mipnerf360/bicycle",
+      "r": 4,
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "8000",
+        "--densification_interval",
+        "500",
+        "--densify_grad_threshold",
+        "0.000205",
+        "--sr_full_fb_window",
+        "2000",
+        "--sr_stride6_after",
+        "12500"
+      ]
+    },
+    "mipnerf360/flowers": {
+      "source": "datasets/mipnerf360/flowers",
+      "r": 4,
+      "model_suffix": "best_psnr26",
+      "extra": [
+        "--densify_until_iter",
+        "8000",
+        "--densification_interval",
+        "500",
+        "--densify_grad_threshold",
+        "0.000205",
+        "--percent_dense",
+        "0.005",
+        "--sr_full_fb_window",
+        "2000",
+        "--sr_stride6_after",
+        "12500"
+      ]
+    },
+    "mipnerf360/garden": {
+      "source": "datasets/mipnerf360/garden",
+      "r": 4,
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "12000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.0003",
+        "--feature_lr",
+        "0.0025",
+        "--shfeature_lr",
+        "0.02",
+        "--sr_full_fb_window",
+        "3000",
+        "--sr_stride6_after",
+        "16500"
+      ]
+    },
+    "mipnerf360/stump": {
+      "source": "datasets/mipnerf360/stump",
+      "r": 4,
+      "model_suffix": "best_tuned",
+      "note": "aggressive v3: densify_until=15000",
+      "extra": [
+        "--densify_until_iter",
+        "15000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.0005",
+        "--percent_dense",
+        "0.004",
+        "--sr_refine_stride",
+        "3",
+        "--sr_stride5_after",
+        "8000",
+        "--sr_stride6_after",
+        "20000",
+        "--sr_full_fb_window",
+        "5000"
+      ]
+    },
+    "mipnerf360/treehill": {
+      "source": "datasets/mipnerf360/treehill",
+      "r": 4,
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "15000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.001",
+        "--percent_dense",
+        "0.01",
+        "--sr_refine_stride",
+        "3",
+        "--sr_stride5_after",
+        "8000",
+        "--sr_stride6_after",
+        "20000",
+        "--sr_full_fb_window",
+        "5000"
+      ]
+    },
+    "mipnerf360/room": {
+      "source": "datasets/mipnerf360/room",
+      "r": 2,
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "15000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.00035",
+        "--feature_lr",
+        "0.0025",
+        "--shfeature_lr",
+        "0.02",
+        "--sr_refine_stride",
+        "3",
+        "--sr_stride5_after",
+        "8000",
+        "--sr_stride6_after",
+        "20000",
+        "--sr_full_fb_window",
+        "5000"
+      ]
+    },
+    "mipnerf360/counter": {
+      "source": "datasets/mipnerf360/counter",
+      "r": 2,
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "10000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.00035",
+        "--feature_lr",
+        "0.0025",
+        "--shfeature_lr",
+        "0.02",
+        "--sr_full_fb_window",
+        "3500",
+        "--sr_stride6_after",
+        "14500"
+      ]
+    },
+    "mipnerf360/kitchen": {
+      "source": "datasets/mipnerf360/kitchen",
+      "r": 2,
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "15000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.00015",
+        "--feature_lr",
+        "0.0025",
+        "--shfeature_lr",
+        "0.02",
+        "--sr_refine_stride",
+        "3",
+        "--sr_stride5_after",
+        "8000",
+        "--sr_stride6_after",
+        "20000",
+        "--sr_full_fb_window",
+        "5000"
+      ]
+    },
+    "mipnerf360/bonsai": {
+      "source": "datasets/mipnerf360/bonsai",
+      "r": 2,
+      "model_suffix": "best_tuned",
+      "note": "tuned_v1 best PSNR 32.614",
+      "extra": [
+        "--densify_until_iter",
+        "12000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.0002",
+        "--feature_lr",
+        "0.0025",
+        "--shfeature_lr",
+        "0.02",
+        "--sr_full_fb_window",
+        "3000",
+        "--sr_stride6_after",
+        "16500"
+      ]
+    },
+    "Deep_Blending/drjohnson": {
+      "source": "../data/Deep_Blending/drjohnson",
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "10000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.00045",
+        "--percent_dense",
+        "0.005",
+        "--feature_lr",
+        "0.0005",
+        "--shfeature_lr",
+        "0.0025",
+        "--sr_full_fb_window",
+        "3000",
+        "--sr_stride6_after",
+        "14500"
+      ]
+    },
+    "Deep_Blending/playroom": {
+      "source": "../data/Deep_Blending/playroom",
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "8000",
+        "--densification_interval",
+        "500",
+        "--densify_grad_threshold",
+        "0.000205",
+        "--percent_dense",
+        "0.003",
+        "--feature_lr",
+        "0.0015",
+        "--shfeature_lr",
+        "0.0015",
+        "--sr_full_fb_window",
+        "2000",
+        "--sr_stride6_after",
+        "12500"
+      ]
+    },
+    "Tanks_Temples/Train": {
+      "source": "../data/Tanks_Temples/Train",
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "12000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.00035",
+        "--percent_dense",
+        "0.015",
+        "--feature_lr",
+        "0.0025",
+        "--shfeature_lr",
+        "0.042",
+        "--sr_full_fb_window",
+        "3500",
+        "--sr_stride6_after",
+        "16500"
+      ]
+    },
+    "Tanks_Temples/Truck": {
+      "source": "../data/Tanks_Temples/Truck",
+      "model_suffix": "best_tuned",
+      "extra": [
+        "--densify_until_iter",
+        "10000",
+        "--densification_interval",
+        "100",
+        "--densify_grad_threshold",
+        "0.00035",
+        "--feature_lr",
+        "0.0025",
+        "--shfeature_lr",
+        "0.04",
+        "--sr_full_fb_window",
+        "3000",
+        "--sr_stride6_after",
+        "14500"
+      ]
+    }
+  },
+  "fastgs_big_targets": {
+    "mipnerf360/bicycle": {
+      "time_min": 2.59,
+      "psnr": 25.26,
+      "ssim": 0.755,
+      "lpips": 0.245,
+      "n_gs_m": 1.55,
+      "fps": 463
+    },
+    "mipnerf360/flowers": {
+      "time_min": 3.22,
+      "psnr": 21.6,
+      "ssim": 0.602,
+      "lpips": 0.341,
+      "n_gs_m": 1.14,
+      "fps": 468
+    },
+    "mipnerf360/garden": {
+      "time_min": 6.5,
+      "psnr": 27.56,
+      "ssim": 0.864,
+      "lpips": 0.11,
+      "n_gs_m": 2.64,
+      "fps": 332
+    },
+    "mipnerf360/stump": {
+      "time_min": 2.88,
+      "psnr": 27.18,
+      "ssim": 0.786,
+      "lpips": 0.24,
+      "n_gs_m": 1.06,
+      "fps": 489
+    },
+    "mipnerf360/treehill": {
+      "time_min": 2.78,
+      "psnr": 22.83,
+      "ssim": 0.632,
+      "lpips": 0.378,
+      "n_gs_m": 1.01,
+      "fps": 507
+    },
+    "mipnerf360/room": {
+      "time_min": 2.38,
+      "psnr": 32.2,
+      "ssim": 0.929,
+      "lpips": 0.189,
+      "n_gs_m": 0.57,
+      "fps": 577
+    },
+    "mipnerf360/counter": {
+      "time_min": 2.62,
+      "psnr": 29.57,
+      "ssim": 0.917,
+      "lpips": 0.177,
+      "n_gs_m": 0.47,
+      "fps": 522
+    },
+    "mipnerf360/kitchen": {
+      "time_min": 5.15,
+      "psnr": 32.17,
+      "ssim": 0.938,
+      "lpips": 0.105,
+      "n_gs_m": 1.18,
+      "fps": 395
+    },
+    "mipnerf360/bonsai": {
+      "time_min": 3.22,
+      "psnr": 32.97,
+      "ssim": 0.953,
+      "lpips": 0.161,
+      "n_gs_m": 0.85,
+      "fps": 498
+    },
+    "Deep_Blending/playroom": {
+      "time_min": 1.93,
+      "psnr": 30.55,
+      "ssim": 0.909,
+      "lpips": 0.239,
+      "n_gs_m": 0.6,
+      "fps": 619
+    },
+    "Deep_Blending/drjohnson": {
+      "time_min": 2.07,
+      "psnr": 29.69,
+      "ssim": 0.905,
+      "lpips": 0.247,
+      "n_gs_m": 0.7,
+      "fps": 595
+    },
+    "Tanks_Temples/Truck": {
+      "time_min": 2.13,
+      "psnr": 26.09,
+      "ssim": 0.886,
+      "lpips": 0.14,
+      "n_gs_m": 0.63,
+      "fps": 579
+    },
+    "Tanks_Temples/Train": {
+      "time_min": 1.93,
+      "psnr": 22.68,
+      "ssim": 0.824,
+      "lpips": 0.21,
+      "n_gs_m": 0.46,
+      "fps": 558
+    }
+  }
+}

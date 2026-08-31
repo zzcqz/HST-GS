@@ -1,0 +1,9 @@
+outputs/
+__pycache__/
+*.pyc
+*.egg-info/
+cuda/build/
+cuda/dist/
+cuda/**/build/
+*.so
+.pytest_cache/

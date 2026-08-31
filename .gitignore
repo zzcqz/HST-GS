@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions / compiled artifacts
+*.so
+*.o
+*.obj
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+*.whl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Experiment outputs and data
+output/
+outputs/
+data/
+experiments/
+seed_exp/
+video/
+*.pth
+*.ply
+*.splat
+*.ckpt
+
+# Logs and debug files
+*.log
+pyerr.log
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Slurm / local job files
+slurm-*.out
+.slurm_gpu_jobid

@@ -1,0 +1,4 @@
+# TFR default hyperparameters (fixed packed)
+base_tile: 16
+pack_layout: soa   # soa | aos
+stable_depth_tiebreak: id

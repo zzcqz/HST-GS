@@ -1,0 +1,9 @@
+# Native 3DGS (Kerbl) attachment point for TFR
+base: native_3dgs
+densify_until_iter: 15000
+densification_interval: 100
+percent_dense: 0.01
+grad_weight_base: 1.0
+grad_weight_scale: 0.0
+sr: false
+fast_train: false

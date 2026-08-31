@@ -1,0 +1,4 @@
+# TFR packed fixed-tile render
+base_tile: 16
+pack_layout: soa
+note: adaptive merge/split removed; path is fixed 16x16 GatherPack + packed raster

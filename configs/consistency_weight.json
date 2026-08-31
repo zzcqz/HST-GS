@@ -1,0 +1,89 @@
+{
+  "description": "Per-scene grad consistency weight: base + scale * (1-consistency)^power",
+  "ranges": {
+    "grad_weight_base": [
+      0,
+      1
+    ],
+    "grad_weight_scale": [
+      5,
+      40
+    ],
+    "grad_weight_power": [
+      5,
+      40
+    ]
+  },
+  "defaults": {
+    "grad_weight_base": 0.8,
+    "grad_weight_scale": 25.0,
+    "grad_weight_power": 15.0
+  },
+  "scenes": {
+    "mipnerf360/bicycle": {
+      "grad_weight_base": 1.0,
+      "grad_weight_scale": 35.0,
+      "grad_weight_power": 10.0
+    },
+    "mipnerf360/flowers": {
+      "grad_weight_base": 0.6,
+      "grad_weight_scale": 15.0,
+      "grad_weight_power": 15.0
+    },
+    "mipnerf360/garden": {
+      "grad_weight_base": 1.0,
+      "grad_weight_scale": 35.0,
+      "grad_weight_power": 15.0
+    },
+    "mipnerf360/stump": {
+      "grad_weight_base": 0.6,
+      "grad_weight_scale": 35.0,
+      "grad_weight_power": 15.0
+    },
+    "mipnerf360/treehill": {
+      "grad_weight_base": 1.0,
+      "grad_weight_scale": 35.0,
+      "grad_weight_power": 10.0
+    },
+    "mipnerf360/room": {
+      "grad_weight_base": 1.0,
+      "grad_weight_scale": 25.0,
+      "grad_weight_power": 15.0
+    },
+    "mipnerf360/counter": {
+      "grad_weight_base": 1.0,
+      "grad_weight_scale": 35.0,
+      "grad_weight_power": 10.0
+    },
+    "mipnerf360/kitchen": {
+      "grad_weight_base": 1.0,
+      "grad_weight_scale": 25.0,
+      "grad_weight_power": 10.0
+    },
+    "mipnerf360/bonsai": {
+      "grad_weight_base": 0.6,
+      "grad_weight_scale": 25.0,
+      "grad_weight_power": 10.0
+    },
+    "Deep_Blending/drjohnson": {
+      "grad_weight_base": 1.0,
+      "grad_weight_scale": 25.0,
+      "grad_weight_power": 15.0
+    },
+    "Deep_Blending/playroom": {
+      "grad_weight_base": 0.6,
+      "grad_weight_scale": 25.0,
+      "grad_weight_power": 15.0
+    },
+    "Tanks_Temples/Train": {
+      "grad_weight_base": 0.8,
+      "grad_weight_scale": 35.0,
+      "grad_weight_power": 15.0
+    },
+    "Tanks_Temples/Truck": {
+      "grad_weight_base": 1.0,
+      "grad_weight_scale": 35.0,
+      "grad_weight_power": 15.0
+    }
+  }
+}
