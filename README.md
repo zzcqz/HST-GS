@@ -178,7 +178,7 @@ If you find this repo helpful, please cite our paper.
 ```
 @article{hstgs2026,
   title={HST-GS: Hierarchical Super-Tile Gaussian Splatting},
-  author={ Xiong, Yu-Jie and Zhou, Zheng and Zhang, Jia-Chen},
+  author={Xiong, Yu-Jie and Zhou, Zheng and Zhang, Jia-Chen},
   year={2026}
 }
 ```
