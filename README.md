@@ -1,9 +1,6 @@
 
 
 # **HST-GS: Fast 3D Gaussian Splatting with Hierarchical Super-Tiles and Scheduled Refinement**
-
-Yu-Jie Xiong  ·  [Zheng Zhou](https://github.com/zzcqz)
-
 ### [arXiv](#) | [Project Page](#)
 
 
@@ -12,8 +9,7 @@ HST-GS is an efficiency-oriented 3D Gaussian Splatting framework. It accelerates
 training and rendering while preserving the image formation model of the original 3DGS,
 through three key components:
 
-- **Hierarchical Super-Tile (HST) screening** — prunes splat-tile pairs with a two-level
-(4×4 → 2×2) super-tile test to cut rasterization cost.
+- **Hierarchical Super-Tile (HST) screening** — prunes splat-tile pairs with 4×4 super-tile test to cut rasterization cost.
 - **Compact depth keys** — reduces the radix-sort key width (e.g. 24-bit) to speed up and
 shrink sorting with negligible quality loss.
 - **Scheduled Refinement (SR)** — skips redundant full forward-backward steps with a
