@@ -51,7 +51,7 @@ python setup.py build_ext --inplace
 cd ../../..
 ```
 
-See `[submodules/TFR.md](submodules/TFR.md)` for details.
+See `submodules/TFR.md` for details.
 
 ## Dataset
 
